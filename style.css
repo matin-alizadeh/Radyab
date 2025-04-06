@@ -1,0 +1,46 @@
+:root {
+  --header-height: 76.1px;
+}
+
+body {
+  font-family: Vazir;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+label,
+.tooltip .tooltip-inner {
+  font-family: Vazir;
+}
+
+/* Header */
+header {
+  min-height: var(--header-height);
+}
+
+a.nav-link.active {
+  color: #3d8ec9 !important;
+}
+
+/* Settings */
+#settingsModal form #currentNumber,
+#settingsModal form #newNumber {
+  direction: ltr;
+}
+
+/* Map */
+#map {
+  height: calc(100vh - var(--header-height));
+  width: 100%;
+}
+
+
+/* Dark Mode */
+[data-bs-theme=dark] svg path {
+  fill: rgba(255, 255, 255, 0.8);
+}
